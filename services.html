@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Services - Blurr</title>
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="./dist/css/output.css">
+	
+	<!-- jQuery Plugin -->
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body class="page-template page-template-tpl-flexible-content page-template-tpl-flexible-content-php page page-id-services singular overflow-hidden" cz-shortcut-listen="true">
+	<div class="mouse">
+        <div class="cursor"></div>
+        <div class="cursor-follower" style="transform: translate(-50%, -50%) translate(547.864px, 514.667px);">
+            <div class="view-wrap" data-text="Close">
+                <div class="view">View Reel</div>
+            </div>
+            <div class="view-project">
+                <div class="view">View Project</div>
+            </div>
+            <div class="view-drag">
+                <div class="view">
+                    <span class="drag-icon"></span>
+                </div>
+            </div>
+            <div class="view-muted">
+                <div class="view">
+                    <i class="muted"></i>
+                    <i class="not-muted"></i>
+                </div>
+            </div>
+            <div class="all-wrap">
+                <span class="all">View More Work</span>
+                <span class="all">View More Work</span>
+            </div>
+            <img src="./dist/img/arrow.png" class="next-page" alt="">
+        </div>
+    </div>
+
+	<div data-barba="wrapper" class="relative overflow-hidden">
+		<div id="page-wrapper">			
+			<!-- Hamburger -->
+			<div class="hamburger-wrap ">
+				<div class="hamburger prevent-barba">
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+
+			<!-- Header -->
+			<header id="page-header" class="page-header">
+				<div class="container relative flex justify-between items-center h-[calc((100vw_*_60)_/_1440)]">
+					<a href="./index.html" class="logo-wrapper">
+						<svg width="78" height="24" viewbox="0 0 78 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M17.3055 17.0547C17.3055 20.1801 15.2797 23.6142 9.9164 23.6142H0V0.771729H9.26045C13.4276 0.771729 16.1093 3.27977 16.1093 6.67526C16.1093 8.27655 15.5113 10.6495 12.8875 11.4212C15.9164 11.8457 17.3055 14.4309 17.3055 17.0547ZM5.209 5.30549V9.68491H8.8553C10.09 9.68491 10.9196 8.89391 10.9196 7.50485C10.9196 6.34729 10.3215 5.32478 8.89389 5.32478H5.209V5.30549ZM12.0579 16.5145C12.0579 15.3184 11.2283 13.9679 9.27974 13.9679H5.209V19.0804H9.27974C11.1318 19.0804 12.0579 17.8071 12.0579 16.5145Z" fill="white"/>
+							<path d="M18.8682 0H23.7685V23.6141H18.8682V0Z" fill="white"/>
+							<path d="M41.5177 8.16077V23.6141H36.6174V20.9518C36.0772 23.1125 33.6077 24 32.1801 24C28.0708 24 26.045 21.2219 26.045 16.4759V8.16077H30.9454V15.9164C30.9454 18.2701 32.373 19.1961 33.627 19.1961C34.9196 19.1961 36.6174 18.5016 36.6174 15.9164V8.16077H41.5177Z" fill="white"/>
+							<path d="M55.7942 8.21864L54.6366 12.8874C53.672 12.3473 52.9196 12.2894 52.418 12.2894C50.4887 12.2894 48.9067 13.8907 48.9067 18.463V23.6141H44.0064V8.16076H48.8489V11.4019C49.7363 8.85529 51.6077 7.75562 53.4984 7.75562C54.1929 7.75562 54.9839 7.83279 55.7942 8.21864Z" fill="white"/>
+							<path d="M68.1222 8.21864L66.9646 12.8874C66 12.3473 65.2476 12.2894 64.746 12.2894C62.8167 12.2894 61.2347 13.8907 61.2347 18.463V23.6141H56.3151V8.16076H61.1576V11.4019C62.045 8.85529 63.9164 7.75562 65.8071 7.75562C66.5402 7.75562 67.3312 7.83279 68.1222 8.21864Z" fill="white"/>
+							<path d="M73.8797 0C71.6643 0 69.8797 1.78462 69.8797 4C69.8797 6.21538 71.6643 8 73.8797 8C76.0951 8 77.8797 6.21538 77.8797 4C77.8797 1.78462 76.0643 0 73.8797 0ZM73.8797 0.615385C75.7566 0.615385 77.2643 2.12308 77.2643 4C77.2643 5.87692 75.7566 7.38462 73.8797 7.38462C72.0028 7.38462 70.4951 5.87692 70.4951 4C70.4951 2.12308 72.0028 0.615385 73.8797 0.615385ZM72.6489 2.15385V5.84615H73.2643V4.61538H74.3105L74.8028 5.84615H75.4182L74.8951 4.55385C75.3874 4.4 75.7259 3.93846 75.7259 3.38462C75.7259 2.70769 75.172 2.15385 74.4951 2.15385H72.6489V2.15385ZM73.2643 2.76923H74.4951C74.8643 2.76923 75.1105 3.01538 75.1105 3.38462C75.1105 3.75385 74.8643 4 74.4951 4H73.2643V2.76923Z" fill="white"/>
+						</svg>
+					</a>
+					<ul class="header-nav items-center justify-between hidden md:flex">
+						<li class="px-[calc((100vw_*_24)_/_1440)] tracking-[calc((100vw_*_0.9)_/_1440)] flex">
+							<a href="./work.html" class="text-white link text-[calc((100vw_*_18)_/_1440)] leading-[calc((100vw_*_23)_/_1440)] font-medium">Lavori</a>
+						</li>
+						<li class="px-[calc((100vw_*_24)_/_1440)] tracking-[calc((100vw_*_0.9)_/_1440)] flex">
+							<a href="./services.html" class="text-white link text-[calc((100vw_*_18)_/_1440)] leading-[calc((100vw_*_23)_/_1440)] font-medium">Cosa Facciamo</a>
+						</li>
+						<li class="px-[calc((100vw_*_24)_/_1440)] tracking-[calc((100vw_*_0.9)_/_1440)] flex">
+							<a href="./price.html" class="text-white link text-[calc((100vw_*_18)_/_1440)] leading-[calc((100vw_*_23)_/_1440)] font-medium">Prezzi</a>
+						</li>
+						<li class="px-[calc((100vw_*_24)_/_1440)] tracking-[calc((100vw_*_0.9)_/_1440)] flex">
+							<a href="./about.html" class="text-white link text-[calc((100vw_*_18)_/_1440)] leading-[calc((100vw_*_23)_/_1440)] font-medium">Studio</a>
+						</li>
+						<li class="px-[calc((100vw_*_24)_/_1440)] tracking-[calc((100vw_*_0.9)_/_1440)] flex">
+							<a href="./contact.html" class="text-white link text-[calc((100vw_*_18)_/_1440)] leading-[calc((100vw_*_23)_/_1440)] font-medium">Lavora con noi</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<!-- /Header -->
+
+			<div class="mobile-menu relative">
+				<div class="mobile-menu-inner relative">
+					<div class="container">
+						<div class="links">
+							<a href="./work.html" class="link mobile-menu-barba-link">
+								<span>Lavori</span>
+							</a>
+							<a href="./services.html" class="link mobile-menu-barba-link">
+								<span>Cosa Facciamo</span>
+							</a>
+							<a href="./price.html" class="link mobile-menu-barba-link">
+								<span>Prezzi</span>
+							</a>
+							<a href="./about.html" class="link mobile-menu-barba-link">
+								<span>Studio</span>
+							</a>
+							<a href="./contact.html" class="link mobile-menu-barba-link">
+								<span>Lavora con noi</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Main -->
+			<main id="barba-wrapper" data-barba="container" data-barba-namespace="dark-mode">
+				<div class="locomotive-wrap " data-scroll-container>
+					<section id="banner-section" data-scroll data-scroll-repeat data-scroll-id="home-intro-section" data-scroll-offset="100%, 0%" class="home-intro-section block relative theme-switch pt-[calc((100vw_*_240)_/_1440)] h-screen mb-[100px]"  data-anim-name="servicesIntroAnim" data-method="homeIntroAnimation" data-theme="dark-mode">
+						<div class="container">							
+							<div class="home-intro-track block md:mb-[calc((100vw_*_232)_/_1440)] mb-[calc((100vw_*_132)_/_768)]" id="stickTarget1">
+								<div class="absolute top-[calc((100vw_*_-240)_/_768)] md:top-[calc((100vw_*_-240)_/_1440)] right-[calc((100vw_*_-160)_/_1440)]">
+									<img src="./dist/img/pattern.svg" alt="" class="pattern-img">
+								</div>
+								<div class="track-inner block" data-scroll data-scroll-sticky data-scroll-target="#stickTarget1" >
+									<div class="banner-block block relative">
+										<div class="container-2">
+											<h1 class="title-2xl text font-medium text-[calc((100vw_*_116)_/_1440)] tracking-[-0.03em] leading-tight" data-scroll
+											data-method="subpageIntroTitleAnimation"
+											data-anim-name="subpageIntroSectionTitleAnim1"
+											data-scroll-call="subpageIntroSectionTitleAnim1">
+											Frontend / backend /<br /> design / plugins / api<br />/ bug fixing  
+											</h1>
+											<p class="text text-[calc((100vw_*_23)_/_768)] md:text-[calc((100vw_*_24)_/_1440)] leading-[calc((100vw_*_35)_/_768)] md:leading-[calc((100vw_*_35)_/_1440)] tracking-[-0.03em] text-white md:ml-[calc((100vw_*_320)_/_1440)] mt-[calc((100vw_*_104)_/_1440)]" data-scroll="" data-method="fadeRevealBottom" data-anim-name="serviceAnim1" data-scroll-call="serviceAnim1" data-delay="700">Lavoriamo per numerose aziende che si occupano di prodotti digitali,<br class="hidden md:block" />siamo quì per aiutarti a sviluppare i progetti per i tuoi clienti, portiamo una<br class="hidden md:block" />serie di skills che daranno più valore ai tuoi servizi.</p>
+										</div>
+										<div id="service_blob_container" style="position:fixed; width: 100%; height: 100%; left: -36%; top: 74%;"> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section id="services-second-section" data-scroll class="block relative theme-switch pb-[calc((100vw_*_284.3)_/_1440)]"  data-theme="dark-mode">
+						<div class="container relative">
+							<div class="section-row md:flex items-center md:ml-[calc((100vw_*_118)_/_1440)]">
+								<div class="corner-media-wrap-1 no-hover" data-scroll data-anim-name="leftImageRightTextSectionCornerAnim2" data-scroll-call="leftImageRightTextSectionCornerAnim2" data-delay="0" data-scroll-offset="46%">
+									<div class="pattern absolute bottom-[calc((100vw_*_-182.6)_/_768)] md:bottom-[calc((100vw_*_-182.6)_/_1440)] left-[calc((100vw_*_-156.77)_/_768)] md:left-[calc((100vw_*_-156.77)_/_1440)]">
+										<img src="./dist/img/pattern03.svg" alt="" class="pattern-img">
+									</div>
+									<div class="card-grid-1" data-method="cardControll">
+										<div class="card-grid-inner">
+											<div data-scroll="" class="card-1 block relative project-custom-cursor">
+												<div class="media-hover-wrap ">
+													<div clas="media-wrap">
+														<lottie-player class="w-[calc((100vw_*_375)_/_768)] md:w-[calc((100vw_*_375)_/_1440)] h-[calc((100vw_*_576)_/_768)] md:h-[calc((100vw_*_576)_/_1440)] xl:w-[375px] xl:h-[536px]" src="./dist/newAnimation.json"  background="transparent"  speed="1" loop controls autoplay></lottie-player>
+														<div class="overlay"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="section-text md:ml-[calc((100vw_*_104)_/_1440)] mt-[calc((100vw_*_250)_/_768)] md:mt-[0]">
+									<h6 class="line-text" data-method="lineText" data-anim-name="leftImageRightTextSectionLineTextAnim2" data-scroll data-scroll-call="leftImageRightTextSectionLineTextAnim2" data-delay="0">
+										<i class="w-[calc((100vw_*_56)_/_768)] md:w-[calc((100vw_*_56)_/_1440)]"></i><span>Il nostro approccio</span>
+									</h6>
+									<h2 class="text font-medium text-primary-500 leading-[calc((100vw_*_48)_/_768)] md:leading-[calc((100vw_*_48)_/_1440)] tracking-[calc((100vw_*_-1.2)_/_1440)] mt-0 mt-[calc((100vw_*_24)_/_1440)] text-[calc((100vw_*_48)_/_768)] md:text-[calc((100vw_*_48)_/_1440)]" data-method="fadeRevealBottom" data-scroll data-anim-name="leftImageRightTextSectionFadeTextAnim2-1" data-scroll-call="leftImageRightTextSectionFadeTextAnim2-1" data-delay="100">
+										Un flusso ben definito <br /> per ridurre i tempi.
+									</h2>
+									<div class="grid grid-cols-2">
+										<div class="mt-[calc((100vw_*_49)_/_1440)] mr-[calc((100vw_*_57.6)_/_1440)]">
+											<span class="text text-[calc((100vw_*_15)_/_768)] md:text-[calc((100vw_*_13)_/_1440)] italic font-normal ">01</span>
+											<h3 class="text text-[calc((100vw_*_24)_/_768)] md:text-[calc((100vw_*_24)_/_1440)] leading-[calc((100vw_*_32)_/_768)] md:leading-[calc((100vw_*_32)_/_1440)] font-medium">Comprendere</h3>
+											<p class="text text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)] mt-[calc((100vw_*_11)_/_1440)] leading-[calc((100vw_*_22.4)_/_768)] md:leading-[calc((100vw_*_22.4)_/_1440)]">
+												Prima di iniziare ogni progetto, <br />cerchiamo di capire i requisiti, gli <br />obbiettivi e le soluzioni migliori.
+											</p>
+										</div>
+										<div class="mt-[calc((100vw_*_49)_/_1440)]">
+											<span class="text text-[calc((100vw_*_15)_/_768)] md:text-[calc((100vw_*_13)_/_1440)] italic font-normal ">02</span>
+											<h3 class="text text-[calc((100vw_*_24)_/_768)] md:text-[calc((100vw_*_24)_/_1440)] leading-[calc((100vw_*_32)_/_768)] md:leading-[calc((100vw_*_32)_/_1440)] font-medium">Brainstorm</h3>
+											<p class="text text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)] mt-[calc((100vw_*_11)_/_1440)] leading-[calc((100vw_*_22.4)_/_768)] md:leading-[calc((100vw_*_22.4)_/_1440)]">
+												Proponiamo idee e soluzioni per <br />realizzare al meglio il progetto e le <br />funzionalità necessarie.	
+											</p>
+										</div>
+										<div class="mt-[calc((100vw_*_49)_/_1440)] mr-[calc((100vw_*_57.6)_/_1440)]">
+											<span class="text text-[calc((100vw_*_15)_/_768)] md:text-[calc((100vw_*_13)_/_1440)] italic font-normal ">03</span>
+											<h3 class="text text-[calc((100vw_*_24)_/_768)] md:text-[calc((100vw_*_24)_/_1440)] leading-[calc((100vw_*_32)_/_768)] md:leading-[calc((100vw_*_32)_/_1440)] font-medium">Design</h3>
+											<p class="text text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)] mt-[calc((100vw_*_11)_/_1440)] leading-[calc((100vw_*_22.4)_/_768)] md:leading-[calc((100vw_*_22.4)_/_1440)]">
+												Cerchiamo di realizzare design <br />seguendo il trend del momento <br />consegnando un prototipo di alta <br />fedeltà navigabile.	
+											</p>
+										</div>
+										<div class="mt-[calc((100vw_*_49)_/_1440)]">
+											<span class="text text-[calc((100vw_*_15)_/_768)] md:text-[calc((100vw_*_13)_/_1440)] italic font-normal ">04</span>
+											<h3 class="text text-[calc((100vw_*_24)_/_768)] md:text-[calc((100vw_*_24)_/_1440)] leading-[calc((100vw_*_32)_/_768)] md:leading-[calc((100vw_*_32)_/_1440)] font-medium">Sviluppo</h3>
+											<p class="text text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)] mt-[calc((100vw_*_11)_/_1440)] leading-[calc((100vw_*_22.4)_/_768)] md:leading-[calc((100vw_*_22.4)_/_1440)]">
+												In base alle scelte fatte sviluppiamo il <br />tuo progetto utilizzando le tecnologie <br />del momento con Wordpress ed <br />Elementor page builder.	
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section id="services-third-section" class="block relative theme-switch pb-[calc((100vw_*_284.3)_/_1440)]" data-scroll data-theme="dark-mode">
+						<div class="container relative md:px-[calc((100vw_*_70)_/_1440)] xl:px-[70px]">
+							<div class="container-2 md:flex justify-between">
+								<div class="section-inner">
+									<h6 class="line-text pb-[calc((100vw_*_32)_/_1440)]" data-scroll data-method="lineText" data-anim-name="leftImageRightTextSectionLineTextAnim3" data-scroll-call="leftImageRightTextSectionLineTextAnim3" data-delay="0">
+										<i class="w-[calc((100vw_*_56)_/_768)] md:w-[calc((100vw_*_56)_/_1440)]"></i><span>Non ritrovarti a dover dire di no ai tuoi clienti</span>
+									</h6>
+									<h1
+										class="m-title text block relative font-medium leading-[calc((100vw_*_88.56)_/_768)] md:leading-[calc((100vw_*_88.56)_/_1440)] text-[calc((100vw_*_70)_/_768)] md:text-[calc((100vw_*_80)_/_1440)] tracking-[calc((100vw_*_-4)_/_1440)]"
+										data-scroll
+										data-method="rowLineTextReveal"
+										data-anim-name="homeForthSectionBrandsAnim100"
+										data-scroll-call="homeForthSectionBrandsAnim100"
+										data-delay="100">
+											Sviluppiamo siti web<br />Wordpress con<br />Integrazioni API e<br />Plugin Custom
+									</h1>
+								</div>
+								<div class="HomepageAnonHeader_illuArea-fcr7B md:mt-[calc((100vw_*_300)_/_1440)] xl:mt-[300px]">
+									<div class="HomepageAnonHeaderHero_editor-gyoDf">
+										<div class="HomepageAnonHeaderHero_editorCode-5pQ-m HomepageAnonHeaderHero_html-BvgAZ">
+											<header>
+												<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M15 6.675l-1.8-.6c-.2-.1-.3-.3-.2-.4l.9-1.7c.6-1.2-.7-2.5-1.9-1.9l-1.7.9c-.1.1-.3 0-.4-.2l-.6-1.8c-.4-1.3-2.2-1.3-2.6 0l-.6 1.8c-.1.2-.3.3-.4.2l-1.7-.9c-1.2-.6-2.5.7-1.9 1.9l.9 1.7c.1.1 0 .3-.2.4l-1.8.6c-1.3.4-1.3 2.3 0 2.7l1.8.6c.2 0 .3.2.2.3l-.9 1.7c-.6 1.2.7 2.5 1.9 1.9l1.7-.9c.2-.1.4 0 .4.2l.6 1.8c.4 1.3 2.3 1.3 2.7 0l.6-1.8c.1-.2.3-.3.4-.2l1.7.9c1.2.6 2.5-.7 1.9-1.9l-1-1.7c-.1-.2 0-.4.2-.4l1.8-.6c1.3-.4 1.3-2.2 0-2.6zm-7 3.7c-1.3 0-2.4-1.1-2.4-2.4 0-1.3 1.1-2.4 2.4-2.4 1.3 0 2.4 1.1 2.4 2.4 0 1.3-1.1 2.4-2.4 2.4z" fill="#4C4F5A"></path></svg>
+													<h1>HTML</h1></header><div class="HomepageAnonHeaderHero_codeContent-I6nz5"><code><span class="HomepageAnonHeaderHero_cr-aN2bn">&lt;div</span> <span class="HomepageAnonHeaderHero_cy-JVLez">class</span><span>=</span><span class="HomepageAnonHeaderHero_cg-49xQf">"rect"</span><span class="HomepageAnonHeaderHero_cr-aN2bn">&gt;&lt;/div&gt;</span></code></div></div><div class="HomepageAnonHeaderHero_editorCode-5pQ-m HomepageAnonHeaderHero_css-bKYqB"><header><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 6.675l-1.8-.6c-.2-.1-.3-.3-.2-.4l.9-1.7c.6-1.2-.7-2.5-1.9-1.9l-1.7.9c-.1.1-.3 0-.4-.2l-.6-1.8c-.4-1.3-2.2-1.3-2.6 0l-.6 1.8c-.1.2-.3.3-.4.2l-1.7-.9c-1.2-.6-2.5.7-1.9 1.9l.9 1.7c.1.1 0 .3-.2.4l-1.8.6c-1.3.4-1.3 2.3 0 2.7l1.8.6c.2 0 .3.2.2.3l-.9 1.7c-.6 1.2.7 2.5 1.9 1.9l1.7-.9c.2-.1.4 0 .4.2l.6 1.8c.4 1.3 2.3 1.3 2.7 0l.6-1.8c.1-.2.3-.3.4-.2l1.7.9c1.2.6 2.5-.7 1.9-1.9l-1-1.7c-.1-.2 0-.4.2-.4l1.8-.6c1.3-.4 1.3-2.2 0-2.6zm-7 3.7c-1.3 0-2.4-1.1-2.4-2.4 0-1.3 1.1-2.4 2.4-2.4 1.3 0 2.4 1.1 2.4 2.4 0 1.3-1.1 2.4-2.4 2.4z" fill="#4C4F5A"></path></svg><h1>SCSS</h1></header><div class="HomepageAnonHeaderHero_codeContent-I6nz5"><code><p class="HomepageAnonHeaderHero_line1-r+tWR"><span class="HomepageAnonHeaderHero_cy-JVLez">.rect</span> <span>{</span></p><br><p class="HomepageAnonHeaderHero_line2-j1x2U"><span class="HomepageAnonHeaderHero_cp-23ozZ">background</span><span>:</span> <span class="HomepageAnonHeaderHero_cy-JVLez">linear-gradient</span>(</p><br><p class="HomepageAnonHeaderHero_line3-pAv+x"><span class="HomepageAnonHeaderHero_co-+ACpm">-119deg</span>,</p><br><p class="HomepageAnonHeaderHero_line4-wTffx"><span class="HomepageAnonHeaderHero_cy-JVLez">$gray</span> <span class="HomepageAnonHeaderHero_co-+ACpm">0%</span>,</p><br><p class="HomepageAnonHeaderHero_line5-b+wBt"><span class="HomepageAnonHeaderHero_cy-JVLez">$dark-gray</span> <span class="HomepageAnonHeaderHero_co-+ACpm">100%</span>); }</p></code></div></div><div class="HomepageAnonHeaderHero_editorCode-5pQ-m HomepageAnonHeaderHero_js-hlc9E"><header><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 6.675l-1.8-.6c-.2-.1-.3-.3-.2-.4l.9-1.7c.6-1.2-.7-2.5-1.9-1.9l-1.7.9c-.1.1-.3 0-.4-.2l-.6-1.8c-.4-1.3-2.2-1.3-2.6 0l-.6 1.8c-.1.2-.3.3-.4.2l-1.7-.9c-1.2-.6-2.5.7-1.9 1.9l.9 1.7c.1.1 0 .3-.2.4l-1.8.6c-1.3.4-1.3 2.3 0 2.7l1.8.6c.2 0 .3.2.2.3l-.9 1.7c-.6 1.2.7 2.5 1.9 1.9l1.7-.9c.2-.1.4 0 .4.2l.6 1.8c.4 1.3 2.3 1.3 2.7 0l.6-1.8c.1-.2.3-.3.4-.2l1.7.9c1.2.6 2.5-.7 1.9-1.9l-1-1.7c-.1-.2 0-.4.2-.4l1.8-.6c1.3-.4 1.3-2.2 0-2.6zm-7 3.7c-1.3 0-2.4-1.1-2.4-2.4 0-1.3 1.1-2.4 2.4-2.4 1.3 0 2.4 1.1 2.4 2.4 0 1.3-1.1 2.4-2.4 2.4z" fill="#4C4F5A"></path></svg><h1>JS</h1></header><div class="HomepageAnonHeaderHero_codeContent-I6nz5"><code><span class="HomepageAnonHeaderHero_cy-JVLez">var</span> <span class="HomepageAnonHeaderHero_cb--MbF+">colors</span> = <br> [<span class="HomepageAnonHeaderHero_cg-49xQf">"#74B087"</span>,<span class="HomepageAnonHeaderHero_cg-49xQf">"#DE7300"</span>,<span class="HomepageAnonHeaderHero_cg-49xQf">"#74B087"</span>];<br><br><span class="HomepageAnonHeaderHero_cc-Zftdz"></span><br><span class="HomepageAnonHeaderHero_cy-JVLez">function</span> <span class="HomepageAnonHeaderHero_cb--MbF+">animate</span>() {};</code></div></div></div></div>
+							</div>
+						</div>
+					</section>
+					
+					<section id="services-eighth-section" data-scroll class="block relative theme-switch"  data-theme="dark-mode">
+						<div class="container">
+							<h4 class="text text-[36px] md:text-[calc((100vw_*_36)_/_1440)] xl:text-[36px] md:w-max mx-auto mb-[123px] md:mb-[calc((100vw_*_123)_/_1440)] xl:mb-[124px]">
+								Dopo anni di esperienza nel settore abbiamo creato<br class="hidden md:block" /> collaborazioni durature che funzionano e che migliorano<br class="hidden md:block" /> ogni giorno, un processo che ci permette di accelerare i<br class="hidden md:block" /> tempi e organizzare meglio i progetti.
+							</h4>
+							<div class="content" data-method="aboutListControl">
+								<div class="desc-item">
+									<div class="flex text">
+										<span>01</span>
+										<h6 class="sub-title">Creare sempre un prototipo del sito</h6>
+									</div>
+									<p class="text">Un prototipo del progetto con la conferma del<br /> cliente ci permette di iniziare la fase di sviluppo<br /> senza cambiamenti e ripensamenti repentini.</p>
+								</div>
+								<div class="desc-item">
+									<div class="flex text">
+										<span>02</span>
+										<h6 class="sub-title">Design desktop e mobile verticalizzato</h6>
+									</div>
+									<p class="text">
+										Se non è una web app la versione mobile la<br /> impostiamo in fase di sviluppo verticalizzandolo<br /> e rendendolo mobile friendly.
+									</p>
+								</div>
+								<div class="desc-item">
+									<div class="flex text">
+										<span>03</span>
+										<h6 class="sub-title">Non ci piace utilizzare i template</h6>
+									</div>
+									<p class="text">
+										Riproduciamo i template in Elementor, per<br /> facilitare la gestione, non dipendere dagli<br /> aggiornamenti, rimanere con un sito veloce e<br /> leggero è molto importante.
+									</p>
+								</div>
+								<div class="desc-item">
+									<div class="flex text">
+										<span>04</span>
+										<h6 class="sub-title">Non vendiamo pacchetti</h6>
+									</div>
+									<p class="text">
+										Forniamo i nostri servizi anche in maniera<br /> separata, solo design, solo sviluppo, solo<br /> assistenza o solo hosting ed aggiornamenti.
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section id="services-nineth-section" data-scroll class="block relative theme-switch pb-[calc((100vw_*_176)_/_1440)] top-[calc((100vw_*_152)_/_768)] md:top-[calc((100vw_*_152)_/_1440)] mb-[calc((100vw_*_115)_/_768)] md:mb-[calc((100vw_*_115)_/_1440)]"  data-theme="dark-mode">
+						<div class="container md:flex relative md:pl-[calc((100vw_*_90)_/_1440)] xl:pl-[90px]">
+							<div class="section-row md:flex md:gap-[calc((100vw_*_110)_/_1440)] items-center">
+								<div class="section-text">
+									<h6 class="line-text" data-method="lineText" data-anim-name="leftImageRightTextSectionLineTextAnim2" data-scroll data-scroll-call="leftImageRightTextSectionLineTextAnim2" data-delay="0">
+										<i class="w-[calc((100vw_*_56)_/_768)] md:w-[calc((100vw_*_56)_/_1440)]"></i>
+										<span>Tools & Plugins</span>
+									</h6>
+									<h2 class="intro-title text font-medium text-primary-500 md:leading-[calc((100vw_*_48)_/_1440)] tracking-[calc((100vw_*_1)_/_1440)] mt-0 mt-[calc((100vw_*_24)_/_1440)] text-[calc((100vw_*_32)_/_768)] leading-[calc((100vw_*_42)_/_768)] md:text-[calc((100vw_*_48)_/_1440)]" data-method="fadeRevealBottom" data-scroll data-anim-name="leftImageRightTextSectionFadeTextAnim2-1" data-scroll-call="leftImageRightTextSectionFadeTextAnim2-1" data-delay="100">
+										Principali tools &<br class="hidden md:block" /> plugins che usiamo										
+									</h2>
+									<p class="intro-p text mt-[0.4rem] md:mt-[calc((100vw_*_24)_/_1440)] mb-[0.4rem] md:mb-[calc((100vw_*_36)_/_1440)] md:leading-[calc((100vw_*_33.6)_/_1440)] tracking-[-0.02em] text-[calc((100vw_*_24)_/_768)] leading-[calc((100vw_*_32)_/_768)] md:text-[calc((100vw_*_24)_/_1440)]" data-method="fadeRevealBottom" data-scroll data-anim-name="leftImageRightTextSectionFadeTextAnim2-2" data-scroll-call="leftImageRightTextSectionFadeTextAnim2-2" data-delay="150">
+										Cerchiamo di utilizzare meno plugins<br class="hidden md:block" />
+										possibili e di sviluppare in maniera<br class="hidden md:block" />
+										custom le funzionalità richieste per<br class="hidden md:block" />
+										mantere un sito leggero e di facile<br class="hidden md:block" />
+										aggiornamento.
+									</p>
+								</div>
+							</div>
+							<div class="md:ml-[calc((100vw_*_100)_/_1440)] xl:ml-[100px]">
+								<div class="md:mb-[calc((100vw_*_24)_/_1440)] xl:mb-[24px]">
+									<h6 class="text prototype">PROTOTYPE</h6>
+									<div class="flex">
+										<div class="shape-item">
+											<h4 class="text">Figma</h4>
+											<img src="./dist/img/shapes/shape03.png" alt="">
+										</div>
+										<div class="shape-item">
+											<h4 class="text">Adobexd</h4>
+											<img src="./dist/img/shapes/shape01.png" alt="">
+										</div>										
+									</div>
+								</div>
+								<div>
+									<h6 class="text prototype">CMS & PLUGINS</h6>
+									<div>
+										<div class="flex">
+											<div class="shape-item">
+												<h4 class="text">Wordpress</h4>
+												<img src="./dist/img/shapes/shape07.png" alt="">
+											</div>
+											<div class="shape-item">
+												<h4 class="text">Elementor</h4>
+												<img src="./dist/img/shapes/shape04.png" alt="">
+											</div>
+										</div>
+										<div class="shape-item">
+											<h4 class="text">Advanced Custom Field</h4>
+											<img src="./dist/img/shapes/shape02.png" alt="">
+										</div>
+										<div class="flex">
+											<div class="shape-item">
+												<h4 class="text">Woocommerce</h4>
+												<img src="./dist/img/shapes/shape05.png" alt="">
+											</div>
+											<div class="shape-item">
+												<h4 class="text">WpRocket</h4>
+												<img src="./dist/img/shapes/shape06.png" alt="">
+											</div>
+										</div>							
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section id="services-forth-section" data-scroll class="block relative theme-switch pb-[calc((100vw_*_262)_/_1440)]" data-theme="dark-mode">
+						<div class="container relative md:flex items-start justify-center">							
+							<h1 class="text">White<br />Label</h1>
+							<p class="text">
+								I nostri progetti sono Whitelabel, quindi<br /> potrai presentare al tuo cliente il progetto<br /> brandizzato  o aggiungerlo al tuo portfolio.
+							</p>							
+						</div>
+					</section>
+
+					<section id="services-fifth-section" data-scroll class="experience-section block relative theme-switch pb-[calc((100vw_*_108)_/_1440)]" data-theme="dark-mode">
+						<div class="container relative">
+							<div class="container-2">
+								<div class="section-inner md:px-[calc((100vw_*_90)_/_1440)]">
+									<h6 class="line-text" data-scroll data-method="lineText" data-anim-name="homeForthSectionLineTextAnim4" data-scroll-call="homeForthSectionLineTextAnim4" data-delay="0">
+										<i class="w-[calc((100vw_*_56)_/_768)] md:w-[calc((100vw_*_56)_/_1440)]"></i><span>Gestiamo i tuoi progetti</span>
+									</h6>
+									
+									<h2 class="text text-[calc((100vw_*_30)_/_768)] md:text-[calc((100vw_*_43)_/_1440)] tracking-[calc((100vw_*_-0.05)_/_768)] md:tracking-[calc((100vw_*_-1.2)_/_1440)] font-medium leading-[calc((100vw_*_50.736)_/_768)] md:leading-[calc((100vw_*_50.736)_/_1440)] block relative pt-[calc((100vw_*_24)_/_1440)] pb-[calc((100vw_*_22)_/_1440)]" data-scroll data-method="rowLineTextReveal" data-anim-name="homeForthSectionBrandsAnim4" data-scroll-call="homeForthSectionBrandsAnim4" data-delay="0">
+										Se non vuoi romperti la testa ad aggiornare,<br /> mantenere e gestire i progetti web dei tuoi clienti lo<br /> possiamo fare noi per te con tanto di hosting ad<br /> alta performance.
+									</h2>									
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section id="services-sixth-section" class="block relative theme-switch" data-scroll data-theme="dark-mode">
+						<div class="container relative md:pl-[calc((100vw_*_510)_/_1440)]">
+							<div class="container-2">
+								<div class="section-inner">
+									<h1
+										class="text block relative font-medium leading-[calc((100vw_*_85)_/_768)] md:leading-[calc((100vw_*_85)_/_1440)] text-[calc((100vw_*_80)_/_768)] md:text-[calc((100vw_*_80)_/_1440)] tracking-[calc((100vw_*_-4)_/_1440)]"
+										data-scroll
+										data-method="rowLineTextReveal"
+										data-anim-name="homeForthSectionBrandsAnim101"
+										data-scroll-call="homeForthSectionBrandsAnim101"
+										data-delay="0">
+											Dominio / Hosting /<br />
+											Sicurezza / SSL / <br />
+											Backup Giornalieri / <br />
+											Email / CDN
+									</h1>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section id="services-seventh-section" class="pt-[calc((100vw_*_316)_/_1440)] pb-[calc((100vw_*_600)_/_1440)] md:pb-[calc((100vw_*_214.92)_/_1440)] md:px-[calc((100vw_*_183.5)_/_1440)] block relative theme-switch" data-scroll data-theme="dark-mode">
+						<div class="container">
+							<h2 class="text text-[calc((100vw_*_48)_/_1440)] leading-[calc((100vw_*_49.6)_/_1440)] tracking-tighter mb-[calc((100vw_*_44)_/_1440)]">Domande</h2>
+							<div class="flex flex-col-reverse md:grid grid-cols-3 relative">
+								<div class="col-span-2">                
+								  <div class="faq-row mr-[calc((100vw_*_73)_/_1440)]">
+									<div class="faq-item block relative">
+									  <div class="line"></div>
+									  <div class="item-wrap flex flex-row items-start py-[calc((100vw_*_32)_/_768)] md:py-[calc((100vw_*_32)_/_1440)] cursor-pointer">
+										<div class="text number text-[calc((100vw_*_20)_/_1440)] leading-[calc((100vw_*_21)_/_1440)] italic mr-[calc((100vw_*_56)_/_1440)]">01</div>
+										<div class="content w-full">
+										  <div class="question relative flex justify-between items-center w-full">
+											<div class="question-line absolute"></div>
+											<div class="text question-title text-[calc((100vw_*_20)_/_768)] md:text-[calc((100vw_*_20)_/_1440)] leading-[calc((100vw_*_21)_/_768)] md:leading-[calc((100vw_*_21)_/_1440)]">
+											  Tempistiche per sviluppare un sito?
+											</div>
+											<div class="plus mr-[calc((100vw_*_36)_/_768)] md:mr-[calc((100vw_*_36)_/_1440)] w-[calc((100vw_*_24)_/_768)] md:w-[calc((100vw_*_24)_/_1440)] h-[calc((100vw_*_24)_/_768)] md:h-[calc((100vw_*_24)_/_1440)] relative"></div>
+										  </div>
+										  <div class="answer p-0 pl-[calc((100vw_*_76.3)_/_1440)] mt-[calc((100vw_*_32.7)_/_1440)] overflow-hidden hidden">
+											<p class="text text-[calc((100vw_*_24)_/_768)] md:text-[calc((100vw_*_24)_/_1440)] leading-[calc((100vw_*_32)_/_768)] md:leading-[calc((100vw_*_32)_/_1440)] tracking-[calc((100vw_*_-0.03em]">Questo dipende molto dalla dimensione del<br />progetto ma in media ci impieghiamo dalle<br />3 alle 6 settimane ma non è raro che<br />riusciamo a completarlo anche prima.</p>
+										  </div>
+										</div>
+									  </div>
+									</div>
+									<div class="faq-item block relative">
+									  <div class="line"></div>
+									  <div class="item-wrap flex flex-row	items-start md:py-[calc((100vw_*_32)_/_1440)] py-[calc((100vw_*_32)_/_768)] cursor-pointer">
+										<div class="text number text-[calc((100vw_*_20)_/_1440)] leading-[calc((100vw_*_21)_/_1440)] italic mr-[calc((100vw_*_56)_/_1440)]">01</div>
+										<div class="content w-full">
+										  <div class="question relative flex justify-between items-center w-full">
+											<div class="question-line absolute"></div>
+											<div class="text question-title text-[calc((100vw_*_20)_/_768)] md:text-[calc((100vw_*_20)_/_1440)] leading-[calc((100vw_*_21)_/_768)] md:leading-[calc((100vw_*_21)_/_1440)]">
+											  Tempistiche per sviluppare un sito?
+											</div>
+											<div class="plus mr-[calc((100vw_*_36)_/_768)] md:mr-[calc((100vw_*_36)_/_1440)] w-[calc((100vw_*_24)_/_768)] md:w-[calc((100vw_*_24)_/_1440)] h-[calc((100vw_*_24)_/_768)] md:h-[calc((100vw_*_24)_/_1440)] relative"></div>
+										  </div>
+										  <div class="answer p-0 pl-[calc((100vw_*_76.3)_/_1440)] mt-[calc((100vw_*_32.7)_/_1440)] overflow-hidden hidden">
+											<p class="text text-[calc((100vw_*_24)_/_768)] md:text-[calc((100vw_*_24)_/_1440)] leading-[calc((100vw_*_32)_/_768)] md:leading-[calc((100vw_*_32)_/_1440)] tracking-[calc((100vw_*_-0.03em]">Questo dipende molto dalla dimensione del<br />progetto ma in media ci impieghiamo dalle<br />3 alle 6 settimane ma non è raro che<br />riusciamo a completarlo anche prima.</p>
+										  </div>
+										</div>
+									  </div>
+									</div>
+									<div class="faq-item block relative">
+									  <div class="line"></div>
+									  <div class="item-wrap flex flex-row	items-start md:py-[calc((100vw_*_32)_/_1440)] py-[calc((100vw_*_32)_/_768)] cursor-pointer">
+										<div class="text number text-[calc((100vw_*_20)_/_1440)] leading-[calc((100vw_*_21)_/_1440)] italic mr-[calc((100vw_*_56)_/_1440)]">01</div>
+										<div class="content w-full">
+										  <div class="question relative flex justify-between items-center w-full">
+											<div class="question-line absolute"></div>
+											<div class="text question-title text-[calc((100vw_*_20)_/_768)] md:text-[calc((100vw_*_20)_/_1440)] leading-[calc((100vw_*_21)_/_768)] md:leading-[calc((100vw_*_21)_/_1440)]">
+											  Tempistiche per sviluppare un sito?
+											</div>
+											<div class="plus mr-[calc((100vw_*_36)_/_768)] md:mr-[calc((100vw_*_36)_/_1440)] w-[calc((100vw_*_24)_/_768)] md:w-[calc((100vw_*_24)_/_1440)] h-[calc((100vw_*_24)_/_768)] md:h-[calc((100vw_*_24)_/_1440)] relative"></div>
+										  </div>
+										  <div class="answer p-0 pl-[calc((100vw_*_76.3)_/_1440)] mt-[calc((100vw_*_32.7)_/_1440)] overflow-hidden hidden">
+											<p class="text text-[calc((100vw_*_24)_/_768)] md:text-[calc((100vw_*_24)_/_1440)] leading-[calc((100vw_*_32)_/_768)] md:leading-[calc((100vw_*_32)_/_1440)] tracking-[calc((100vw_*_-0.03em]">Questo dipende molto dalla dimensione del<br />progetto ma in media ci impieghiamo dalle<br />3 alle 6 settimane ma non è raro che<br />riusciamo a completarlo anche prima.</p>
+										  </div>
+										</div>
+									  </div>
+									</div>
+									<div class="faq-item block relative">
+									  <div class="line"></div>
+									  <div class="item-wrap flex flex-row	items-start md:py-[calc((100vw_*_32)_/_1440)] py-[calc((100vw_*_32)_/_768)] cursor-pointer">
+										<div class="text number text-[calc((100vw_*_20)_/_1440)] leading-[calc((100vw_*_21)_/_1440)] italic mr-[calc((100vw_*_56)_/_1440)]">01</div>
+										<div class="content w-full">
+										  <div class="question relative flex justify-between items-center w-full">
+											<div class="question-line absolute"></div>
+											<div class="text question-title text-[calc((100vw_*_20)_/_768)] md:text-[calc((100vw_*_20)_/_1440)] leading-[calc((100vw_*_21)_/_768)] md:leading-[calc((100vw_*_21)_/_1440)]">
+											  Tempistiche per sviluppare un sito?
+											</div>
+											<div class="plus mr-[calc((100vw_*_36)_/_768)] md:mr-[calc((100vw_*_36)_/_1440)] w-[calc((100vw_*_24)_/_768)] md:w-[calc((100vw_*_24)_/_1440)] h-[calc((100vw_*_24)_/_768)] md:h-[calc((100vw_*_24)_/_1440)] relative"></div>
+										  </div>
+										  <div class="answer p-0 pl-[calc((100vw_*_76.3)_/_1440)] mt-[calc((100vw_*_32.7)_/_1440)] overflow-hidden hidden">
+											<p class="text text-[calc((100vw_*_24)_/_768)] md:text-[calc((100vw_*_24)_/_1440)] leading-[calc((100vw_*_32)_/_768)] md:leading-[calc((100vw_*_32)_/_1440)] tracking-[calc((100vw_*_-0.03em]">Questo dipende molto dalla dimensione del<br />progetto ma in media ci impieghiamo dalle<br />3 alle 6 settimane ma non è raro che<br />riusciamo a completarlo anche prima.</p>
+										  </div>
+										</div>
+									  </div>
+									</div>
+									<div class="faq-item block relative" onclick="faqItemClickEvent()">
+									  <div class="line"></div>
+									  <div class="item-wrap flex flex-row	items-start md:py-[calc((100vw_*_32)_/_1440)] py-[calc((100vw_*_32)_/_768)] cursor-pointer">
+										<div class="text number text-[calc((100vw_*_20)_/_1440)] leading-[calc((100vw_*_21)_/_1440)] italic mr-[calc((100vw_*_56)_/_1440)]">01</div>
+										<div class="content w-full">
+										  <div class="question relative flex justify-between items-center w-full">
+											<div class="question-line absolute"></div>
+											<div class="text question-title text-[calc((100vw_*_20)_/_768)] md:text-[calc((100vw_*_20)_/_1440)] leading-[calc((100vw_*_21)_/_768)] md:leading-[calc((100vw_*_21)_/_1440)]">
+											  Tempistiche per sviluppare un sito?
+											</div>
+											<div class="plus mr-[calc((100vw_*_36)_/_768)] md:mr-[calc((100vw_*_36)_/_1440)] w-[calc((100vw_*_24)_/_768)] md:w-[calc((100vw_*_24)_/_1440)] h-[calc((100vw_*_24)_/_768)] md:h-[calc((100vw_*_24)_/_1440)] relative"></div>
+										  </div>
+										  <div class="answer p-0 pl-[calc((100vw_*_76.3)_/_1440)] mt-[calc((100vw_*_32.7)_/_1440)] overflow-hidden hidden">
+											<p class="text text-[calc((100vw_*_24)_/_768)] md:text-[calc((100vw_*_24)_/_1440)] leading-[calc((100vw_*_32)_/_768)] md:leading-[calc((100vw_*_32)_/_1440)] tracking-[calc((100vw_*_-0.03em]">Questo dipende molto dalla dimensione del<br />progetto ma in media ci impieghiamo dalle<br />3 alle 6 settimane ma non è raro che<br />riusciamo a completarlo anche prima.</p>
+										  </div>
+										</div>
+									  </div>
+									</div>
+								  </div>
+								</div>
+								<div id="service_faq_blob_container" style="width: 100%; height: 100%;"></div>
+							</div>                                            
+						</div>                            
+					</section>
+
+					<section id="contact-section" data-scroll class="block relative block relative theme-switch pb-[calc((100vw_*_219)_/_1440)]" data-theme="dark-mode">
+						<div class="container">
+							<div class="container-2 text-center">
+								<h4 class="text title font-medium leading-[calc((100vw_*_69)_/_768)] md:leading-[calc((100vw_*_69)_/_1440)] text-[calc((100vw_*_64)_/_768)] md:text-[calc((100vw_*_64)_/_1440)] text-center inline-block tracking-[calc((100vw_*_-3.2)_/_1440)] mb-[calc((100vw_*_43.56)_/_768)] md:mb-[calc((100vw_*_43.56)_/_1440)]" data-scroll=""
+									data-method="rowLineTextReveal"
+									data-anim-name="homeForthSectionBrandsAnim10"
+									data-scroll-call="homeForthSectionBrandsAnim10"
+									data-delay="0"
+								>
+								Parlaci del tuo prossimo<br /> progetto.</h4>
+								<div class="button-outer text-center">
+									<a href="#" class="btn-arrow btn-secondary ml-[37%] md:ml-[42%] flex items-center btn-discover relative animated-arrow border border-primary-900 px-[calc((100vw_*_35)_/_768)] md:px-[calc((100vw_*_35)_/_1440)] py-[calc((100vw_*_16)_/_768)] md:py-[calc((100vw_*_16)_/_1440)] font-medium text-[calc((100vw_*_18)_/_768)] md:text-[calc((100vw_*_18)_/_1440)] tracking-[calc((100vw_*_-0.48)_/_1440)] leading-[calc((100vw_*_22)_/_1440)] gap-[calc((100vw_*_10)_/_1440)] w-max is-inview" data-scroll="" data-method="fadeReveal" data-anim-name="homeHelpSectionButtonAnim6" data-scroll-call="homeHelpSectionButtonAnim6" data-delay="100" style="opacity: 1;">
+										<span>Lavora con noi</span>
+										<span class="the-arrow -right white">
+											<span class="shaft"></span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- Footer -->
+					<footer data-scroll class="page-footer theme-switch pt-[calc((100vw_*_28.3)_/_1440)] pb-[calc((100vw_*_29.3)_/_1440)]" data-theme="dark-mode">
+						<div class="container">
+							<div class="grid grid-flow-row-dense md:grid-cols-12 border-b border-primary-500 pb-[calc((100vw_*_32)_/_1440)]">
+								<div class="col-span-8 mb-[calc((100vw_*_50)_/_768)] md:mb-0">
+									<a href="./index.html" class="footer-logo">
+										<svg width="82" height="27" viewbox="0 0 82 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6.21077 10.8294V4.81739H11.5028C12.0068 4.81739 12.4868 4.86539 12.9428 4.96139C13.4228 5.03339 13.8428 5.17739 14.2028 5.39339C14.5628 5.60939 14.8508 5.90939 15.0668 6.29339C15.2828 6.67739 15.3908 7.16939 15.3908 7.76939C15.3908 8.84939 15.0668 9.62939 14.4188 10.1094C13.7708 10.5894 12.9428 10.8294 11.9348 10.8294H6.21077ZM0.558768 0.425393V26.1294H13.0148C14.1668 26.1294 15.2828 25.9854 16.3628 25.6974C17.4668 25.4094 18.4388 24.9654 19.2788 24.3654C20.1428 23.7654 20.8268 22.9974 21.3308 22.0614C21.8348 21.1014 22.0868 19.9734 22.0868 18.6774C22.0868 17.0694 21.5308 15.7014 20.8988 14.5734C20.1308 13.4214 18.9548 12.6174 17.3708 12.1614C18.5228 11.6094 19.3868 10.9014 19.9628 10.0374C20.5628 9.17339 20.8628 8.09339 20.8628 6.79739C20.8628 5.59739 20.6588 4.58939 20.2508 3.77339C19.8668 2.95739 19.3148 2.30939 18.5948 1.82939C17.8748 1.32539 17.0108 0.965393 16.0028 0.749393C14.9948 0.533393 13.8788 0.425393 12.6548 0.425393H0.558768ZM6.21077 21.7374V14.6814H12.3668C13.5908 14.6814 14.5748 14.9694 15.3188 15.5454C16.0628 16.0974 16.4348 17.0334 16.4348 18.3534C16.4348 19.0254 16.3148 19.5774 16.0748 20.0094C15.8588 20.4414 15.5588 20.7894 15.1748 21.0534C14.7908 21.2934 14.3468 21.4734 13.8428 21.5934C13.3388 21.6894 12.8108 21.7374 12.2588 21.7374H6.21077ZM25.5104 0.425393V26.1294H30.6224V0.425393H25.5104ZM52.1077 26.1294V7.51739H46.9957V17.2734C46.9957 19.1694 46.6837 20.5374 46.0597 21.3774C45.4357 22.1934 44.4277 22.6014 43.0357 22.6014C41.8117 22.6014 40.9597 22.2294 40.4797 21.4854C39.9997 20.7174 39.7597 19.5654 39.7597 18.0294V7.51739H34.6477V18.9654C34.6477 20.1174 34.7437 21.1734 34.9357 22.1334C35.1517 23.0694 35.5117 23.8734 36.0157 24.5454C36.5197 25.1934 37.2037 25.6974 38.0677 26.0574C38.9557 26.4174 40.0837 26.5974 41.4517 26.5974C42.5317 26.5974 43.5877 26.3574 44.6197 25.8774C45.6517 25.3974 46.4917 24.6174 47.1397 23.5374H47.2477V26.1294H52.1077ZM55.9875 7.51739V26.1294H61.0995V17.7414C61.0995 16.9014 61.1835 16.1214 61.3515 15.4014C61.5195 14.6814 61.7955 14.0574 62.1795 13.5294C62.5875 12.9774 63.1155 12.5454 63.7635 12.2334C64.4115 11.9214 65.2035 11.7654 66.1395 11.7654C66.4515 11.7654 66.7755 11.7894 67.1115 11.8374C67.4475 11.8614 67.7355 11.8974 67.9755 11.9454V7.19339C67.5675 7.07339 67.1955 7.01339 66.8595 7.01339C66.2115 7.01339 65.5875 7.10939 64.9875 7.30139C64.3875 7.49339 63.8235 7.76939 63.2955 8.12939C62.7675 8.46539 62.2995 8.88539 61.8915 9.38939C61.4835 9.86939 61.1595 10.3974 60.9195 10.9734H60.8475V7.51739H55.9875ZM69.9797 7.51739V26.1294H75.0917V17.7414C75.0917 16.9014 75.1757 16.1214 75.3437 15.4014C75.5117 14.6814 75.7877 14.0574 76.1717 13.5294C76.5797 12.9774 77.1077 12.5454 77.7557 12.2334C78.4037 11.9214 79.1957 11.7654 80.1317 11.7654C80.4437 11.7654 80.7677 11.7894 81.1037 11.8374C81.4397 11.8614 81.7277 11.8974 81.9677 11.9454V7.19339C81.5597 7.07339 81.1877 7.01339 80.8517 7.01339C80.2037 7.01339 79.5797 7.10939 78.9797 7.30139C78.3797 7.49339 77.8157 7.76939 77.2877 8.12939C76.7597 8.46539 76.2917 8.88539 75.8837 9.38939C75.4757 9.86939 75.1517 10.3974 74.9117 10.9734H74.8397V7.51739H69.9797Z" fill="white"/>
+										</svg>
+									</a>
+									<span class="sm:w-1/5 text-left mt-[calc((100vw_*_20)_/_1440)] text-[calc((100vw_*_36)_/_768)] md:text-[calc((100vw_*_24)_/_1440)] leading-[calc((100vw_*_48)_/_768)] md:leading-[calc((100vw_*_29)_/_1440)] text-primary-500 block">
+										Studio di <br>design & <br>sviluppo <br>web.
+									</span>
+								</div>
+								<div class="col-span-2 text-left">
+									<span class="text-white font-bold text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)] leading-[calc((100vw_*_20)_/_1440)] block">Links</span>
+									<ul>
+										<li class="flex md:mt-[calc((100vw_*_20.5)_/_1440)] mt-[calc((100vw_*_20.5)_/_768)] leading-[calc((100vw_*_1]">
+											<a href="./index.html" class="link text text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)] leading-[calc((100vw_*_19)_/_768)] md:leading-[calc((100vw_*_19)_/_1440)]">Home</a>
+										</li>
+										<li class="flex md:mt-[calc((100vw_*_20.5)_/_1440)] mt-[calc((100vw_*_20.5)_/_768)] leading-[calc((100vw_*_1]">
+											<a href="./services.html" class="link text text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)] leading-[calc((100vw_*_19)_/_768)] md:leading-[calc((100vw_*_19)_/_1440)]">Cosa Facciamo</a>
+										</li>
+										<li class="flex md:mt-[calc((100vw_*_20.5)_/_1440)] mt-[calc((100vw_*_20.5)_/_768)] leading-[calc((100vw_*_1]">
+											<a href="./about.html" class="link text text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)] leading-[calc((100vw_*_19)_/_768)] md:leading-[calc((100vw_*_19)_/_1440)]">Studio</a>
+										</li>
+										<li class="flex md:mt-[calc((100vw_*_20.5)_/_1440)] mt-[calc((100vw_*_20.5)_/_768)] leading-[calc((100vw_*_1]">
+											<a href="./work.html" class="link text text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)] leading-[calc((100vw_*_19)_/_768)] md:leading-[calc((100vw_*_19)_/_1440)]">Lavori</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-span-2 text-left">
+									<span class="text-white font-bold text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)] block leading-[calc((100vw_*_20)_/_1440)]">Studio</span>
+									<ul>
+										<li class="md:mt-[calc((100vw_*_20.5)_/_1440)] mt-[calc((100vw_*_20.5)_/_768)] leading-[calc((100vw_*_21)_/_768)] md:leading-[calc((100vw_*_21)_/_1440)]">
+											<address class="text text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)]">
+												Via Valentini 9, 38060 <br />Calliano (TN)
+											</address>
+										</li>
+									</ul>
+									<span class="text-white font-bold text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)] mt-[calc((100vw_*_34.02)_/_1440)] block leading-[1] contact-span">Contatti</span>
+									<ul>
+										<li class="flex  md:mt-[calc((100vw_*_10)_/_1440)] mt-[calc((100vw_*_10)_/_768)] leading-[calc((100vw_*_1] leading-[1]">
+											<a href="#" class="text text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)]">aryan@blurr.it</a>
+										</li>
+										<li class="flex  md:mt-[calc((100vw_*_10)_/_1440)] mt-[calc((100vw_*_10)_/_768)] leading-[calc((100vw_*_1] leading-[1]">
+											<a href="javascript:;" class="text text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)]">+39 3770935429</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="line"></div>
+							<div class="flex justify-between pt-[calc((100vw_*_33.04)_/_1440)] copyright">
+								<p class="text-[calc((100vw_*_13)_/_768)] md:text-[calc((100vw_*_13)_/_1440)] xl:text-[13px] leading-[1] text-left block text-primary-500">Copyright 2022 Blurr.it p.va 02559530221</p>
+								<a href="#" class="link text text-[calc((100vw_*_13)_/_768)] md:text-[calc((100vw_*_13)_/_1440)] xl:text-[13px] leading-[calc((100vw_*_13)_/_768)] md:leading-[calc((100vw_*_13)_/_1440)]">Privacy & Policy</a>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</main>
+		</div>
+	</div>
+</body>
+
+<!-- JavaScript Plugins -->
+<script src="./dist/js/gsap.min.js"></script>
+<script src="./dist/js/SplitText.min.js"></script>
+<script src="./dist/js/lottie_light_min.js"></script>
+<script src="./dist/js/swiper-bundle-build.min.js"></script>
+<script src="./dist/js/ScrollTrigger.min.js"></script>
+<script src="./dist/js/barba.umd.js"></script>
+<script src="./dist/js/ua-parser.min.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@1.5.0/dist/lottie-interactivity.min.js"></script>
+
+<script src="./dist/js/jsband-min.js" type="text/javascript"></script>
+<script src="./dist/js/blob.js" type="text/javascript"></script>
+<script src="./dist/js/bundle.js"></script>
+
+<!-- Core JavaScript -->
+<script src="./dist/js/script.js"></script>
+
+</html>

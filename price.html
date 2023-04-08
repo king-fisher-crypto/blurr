@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Price - Blurr</title>
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="./dist/css/output.css">
+	
+	<!-- jQuery Plugin -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body class="page-template page-template-tpl-flexible-content page-template-tpl-flexible-content-php page page-id-work singular overflow-hidden">
+	<div class="mouse">
+        <div class="cursor"></div>
+        <div class="cursor-follower" style="transform: translate(-50%, -50%) translate(547.864px, 514.667px);">
+            <div class="view-wrap" data-text="Close">
+                <div class="view">View Reel</div>
+            </div>
+            <div class="view-project">
+                <div class="view">View Project</div>
+            </div>
+            <div class="view-drag">
+                <div class="view">
+                    <span class="drag-icon"></span>
+                </div>
+            </div>
+            <div class="view-muted">
+                <div class="view">
+                    <i class="muted"></i>
+                    <i class="not-muted"></i>
+                </div>
+            </div>
+            <div class="all-wrap">
+                <span class="all">View More Work</span>
+                <span class="all">View More Work</span>
+            </div>
+            <img src="./dist/img/arrow.png" class="next-page" alt="">
+        </div>
+    </div>
+
+	<div data-barba="wrapper" class="relative overflow-hidden">
+		<div id="page-wrapper">			
+			<!-- Hamburger -->
+			<div class="hamburger-wrap ">
+				<div class="hamburger prevent-barba">
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			
+			<!-- Header -->
+			<header id="page-header" class="page-header">
+				<div class="container relative flex justify-between items-center h-[calc((100vw_*_60)_/_1440)]">
+					<a href="./index.html" class="logo-wrapper">
+						<svg width="78" height="24" viewbox="0 0 78 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M17.3055 17.0547C17.3055 20.1801 15.2797 23.6142 9.9164 23.6142H0V0.771729H9.26045C13.4276 0.771729 16.1093 3.27977 16.1093 6.67526C16.1093 8.27655 15.5113 10.6495 12.8875 11.4212C15.9164 11.8457 17.3055 14.4309 17.3055 17.0547ZM5.209 5.30549V9.68491H8.8553C10.09 9.68491 10.9196 8.89391 10.9196 7.50485C10.9196 6.34729 10.3215 5.32478 8.89389 5.32478H5.209V5.30549ZM12.0579 16.5145C12.0579 15.3184 11.2283 13.9679 9.27974 13.9679H5.209V19.0804H9.27974C11.1318 19.0804 12.0579 17.8071 12.0579 16.5145Z" fill="white"/>
+							<path d="M18.8682 0H23.7685V23.6141H18.8682V0Z" fill="white"/>
+							<path d="M41.5177 8.16077V23.6141H36.6174V20.9518C36.0772 23.1125 33.6077 24 32.1801 24C28.0708 24 26.045 21.2219 26.045 16.4759V8.16077H30.9454V15.9164C30.9454 18.2701 32.373 19.1961 33.627 19.1961C34.9196 19.1961 36.6174 18.5016 36.6174 15.9164V8.16077H41.5177Z" fill="white"/>
+							<path d="M55.7942 8.21864L54.6366 12.8874C53.672 12.3473 52.9196 12.2894 52.418 12.2894C50.4887 12.2894 48.9067 13.8907 48.9067 18.463V23.6141H44.0064V8.16076H48.8489V11.4019C49.7363 8.85529 51.6077 7.75562 53.4984 7.75562C54.1929 7.75562 54.9839 7.83279 55.7942 8.21864Z" fill="white"/>
+							<path d="M68.1222 8.21864L66.9646 12.8874C66 12.3473 65.2476 12.2894 64.746 12.2894C62.8167 12.2894 61.2347 13.8907 61.2347 18.463V23.6141H56.3151V8.16076H61.1576V11.4019C62.045 8.85529 63.9164 7.75562 65.8071 7.75562C66.5402 7.75562 67.3312 7.83279 68.1222 8.21864Z" fill="white"/>
+							<path d="M73.8797 0C71.6643 0 69.8797 1.78462 69.8797 4C69.8797 6.21538 71.6643 8 73.8797 8C76.0951 8 77.8797 6.21538 77.8797 4C77.8797 1.78462 76.0643 0 73.8797 0ZM73.8797 0.615385C75.7566 0.615385 77.2643 2.12308 77.2643 4C77.2643 5.87692 75.7566 7.38462 73.8797 7.38462C72.0028 7.38462 70.4951 5.87692 70.4951 4C70.4951 2.12308 72.0028 0.615385 73.8797 0.615385ZM72.6489 2.15385V5.84615H73.2643V4.61538H74.3105L74.8028 5.84615H75.4182L74.8951 4.55385C75.3874 4.4 75.7259 3.93846 75.7259 3.38462C75.7259 2.70769 75.172 2.15385 74.4951 2.15385H72.6489V2.15385ZM73.2643 2.76923H74.4951C74.8643 2.76923 75.1105 3.01538 75.1105 3.38462C75.1105 3.75385 74.8643 4 74.4951 4H73.2643V2.76923Z" fill="white"/>
+						</svg>
+					</a>
+					<ul class="header-nav items-center justify-between hidden md:flex">
+						<li class="px-[calc((100vw_*_24)_/_1440)] tracking-[calc((100vw_*_0.9)_/_1440)] flex">
+							<a href="./work.html" class="text-white link text-[calc((100vw_*_18)_/_1440)] leading-[calc((100vw_*_23)_/_1440)] font-medium">Lavori</a>
+						</li>
+						<li class="px-[calc((100vw_*_24)_/_1440)] tracking-[calc((100vw_*_0.9)_/_1440)] flex">
+							<a href="./services.html" class="text-white link text-[calc((100vw_*_18)_/_1440)] leading-[calc((100vw_*_23)_/_1440)] font-medium">Cosa Facciamo</a>
+						</li>
+						<li class="px-[calc((100vw_*_24)_/_1440)] tracking-[calc((100vw_*_0.9)_/_1440)] flex">
+							<a href="./price.html" class="text-white link text-[calc((100vw_*_18)_/_1440)] leading-[calc((100vw_*_23)_/_1440)] font-medium">Prezzi</a>
+						</li>
+						<li class="px-[calc((100vw_*_24)_/_1440)] tracking-[calc((100vw_*_0.9)_/_1440)] flex">
+							<a href="./about.html" class="text-white link text-[calc((100vw_*_18)_/_1440)] leading-[calc((100vw_*_23)_/_1440)] font-medium">Studio</a>
+						</li>
+						<li class="px-[calc((100vw_*_24)_/_1440)] tracking-[calc((100vw_*_0.9)_/_1440)] flex">
+							<a href="./contact.html" class="text-white link text-[calc((100vw_*_18)_/_1440)] leading-[calc((100vw_*_23)_/_1440)] font-medium">Lavora con noi</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<!-- /Header -->
+
+			<div class="mobile-menu relative">
+				<div class="mobile-menu-inner relative">
+					<div class="container">
+						<div class="links">
+							<a href="./work.html" class="link mobile-menu-barba-link">
+								<span>Lavori</span>
+							</a>
+							<a href="./services.html" class="link mobile-menu-barba-link">
+								<span>Cosa Facciamo</span>
+							</a>
+							<a href="./price.html" class="link mobile-menu-barba-link">
+								<span>Prezzi</span>
+							</a>
+							<a href="./about.html" class="link mobile-menu-barba-link">
+								<span>Studio</span>
+							</a>
+							<a href="./contact.html" class="link mobile-menu-barba-link">
+								<span>Lavora con noi</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Main -->
+			<main id="barba-wrapper" data-barba="container" data-barba-namespace="dark-mode">
+				<div class="locomotive-wrap " data-scroll-container>
+					<section id="banner-section" data-scroll data-scroll-repeat data-scroll-id="home-intro-section" class="subpage-intro-section block relative theme-switch small-intro-subpage pt-[calc((100vw_*_240)_/_1440)] h-screen"  data-anim-name="workIntroAnim"  data-method="homeIntroAnimation" data-theme="dark-mode">
+						<div class="container">
+							<div class="home-intro-track block md:pl-[calc((100vw_*_110)_/_1440)] mb-[calc((100vw_*_232)_/_1440)]" id="stickTarget1">
+								<div class="absolute top-0 right-[calc((100vw_*_-89.2)_/_1440)]">
+									<img src="./dist/img/pattern.svg" alt="" class="pattern-img">
+								</div>
+								<div class="banner-block track-inner block" data-scroll data-scroll-sticky data-scroll-target="#stickTarget1" >
+									<div class="block relative">
+										<div class="container-2">
+											<h1 class="title-2xl text font-medium text-[calc((100vw_*_116)_/_1440)] tracking-[-0.04em] leading-tight" data-scroll
+											data-method="subpageIntroTitleAnimation"
+											data-anim-name="subpageIntroSectionTitleAnim1"
+											data-scroll-call="subpageIntroSectionTitleAnim1"
+											data-delay="100">
+                                            Un listino prezzi che <br /> si adatta al tuo modo<br />di lavorare.
+                                            </h1>
+											<p class="text-[calc((100vw_*_24)_/_768)] md:text-[calc((100vw_*_24)_/_1440)]  leading-[calc((100vw_*_32)_/_768)] md:leading-[calc((100vw_*_32)_/_1440)] tracking-[-0.03em] text-white md:ml-[calc((100vw_*_320)_/_1440)] mt-[calc((100vw_*_104)_/_1440)]" data-scroll="" data-method="fadeRevealBottom" data-anim-name="workAnim1" data-scroll-call="workAnim1" data-delay="700">
+                                                Il nostro pricing spesso dipende dalla complessità del design e dalle<br class="hidden md:block" />funzionalità richieste. Con alcune aziende ci occupiamo solo di una<br  class="hidden md:block" /> parte del processo, per altre sviluppiamo il progetto a 360°.    
+                                            </p>
+										</div>
+									</div>
+                                    <div id="price_blob_container" style="position:fixed; width: 100%; height: 100%; left: -36%; top: 74%;"> </div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+                    <section data-scroll class="block price-section relative theme-switch pb-[calc((100vw_*_144)_/_1440)]" data-theme="dark-mode">
+						<div class="full-container relative">
+							<div class="section-inner pb-[calc((100vw_*_18)_/_1440)]">
+									<h2 class="text block relative font-medium text-center inline-block tracking-[calc((100vw_*_-2.4)_/_1440)] leading-[1.3em] text-[calc((100vw_*_48)_/_768)] md:text-[calc((100vw_*_48)_/_1440)]"
+										data-scroll="" 
+										data-method="rowLineTextReveal"
+										data-anim-name="homeForthSectionBrandsAnim9"
+										data-scroll-call="homeForthSectionBrandsAnim9"
+										data-delay="0" 
+									>
+                                    Pricing
+									</h2>										
+							</div>
+                            <p class="description text text-[15px] leading-[21px] tracking-[-0.03em] text-center mb-[81px]">
+                                I nostri prezzi sono indicativi, tieni a mente che sviluppiamo siti utilizzando le best practices con le seguenti caratteristiche:<br class="hidden md:block" />
+                                prototipo figma, child theme, sviluppo responsive, seo friendly, veloci, leggeri, immagini stock, plugin wprocket.
+                            </p>
+
+                            <div class="container">
+                                <div class="grid md:grid-cols-4 gap-[78px] md:gap-[20px]">
+                                    <div class="price-item default">
+                                        <h3>Solo Sviluppo</h3>
+                                        <p class="description">
+                                            Se hai già il design e i contenuti <br /> te lo sviluppiamo.
+                                        </p>
+                                        <h5>A partire da</h5>
+                                        <div class="amount"> 
+                                            <span class="currency font-DM-sans">€</span>
+                                            <span class="number">1’198</span>
+                                            <span class="sub-title">+ IVA</span>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>Sviluppo Wordpress</p>
+                                            </li>
+                                            <li>
+                                                <p>Elementor PRO</p>
+                                            </li>
+                                            <li>
+                                                <p>WpRocket</p>
+                                            </li>
+                                            <li>
+                                                <p>Circa 5 - 8 pagine</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-item light-yellow">
+                                        <h3>Solo Design</h3>
+                                        <p class="description">
+                                            Forniamo un design custom con<br /> prototipo Figma.
+                                        </p>
+                                        <h5>A partire da</h5>
+                                        <div class="amount">
+                                            <div class="amount"> 
+                                                <span class="currency font-DM-sans">€</span>
+                                                <span class="number">898</span>
+                                                <span class="sub-title">+ IVA</span>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>Custom Design</p>
+                                            </li>
+                                            <li>
+                                                <p>Custom Design</p>
+                                            </li>
+                                            <li>
+                                                <p>Circa 5 - 8 pagine</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-item light-purple">
+                                        <h3>Design & Sviluppo</h3>
+                                        <p class="description">
+                                            Se hai bisogno sia di design che di<br />sviluppo siamo pronti per te
+                                        </p>
+                                        <h5>A partire da</h5>
+                                        <div class="amount">
+                                            <span class="currency font-DM-sans">€</span>
+                                            <span class="number">1'898</span>
+                                            <span class="sub-title">+ IVA</span>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>Sviluppo Wordpress</p>
+                                            </li>
+                                            <li>
+                                                <p>Elementor PRO</p>
+                                            </li>
+                                            <li>
+                                                <p>Custom Design</p>
+                                            </li>
+                                            <li>
+                                                <p>Prototipo Figma navigabile</p>
+                                            </li>
+                                            <li>
+                                                <p>Plugin WpRocket</p>
+                                            </li>
+                                            <li>
+                                                <p>Circa 5 - 8 pagine</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-item light-green">
+                                        <h3>Circa 5 - 8 pagine</h3>
+                                        <p class="description">
+                                            Hai bisogno di creare un negozio<br /> online?
+                                        </p>
+                                        <h5>A partire da</h5>
+                                        <div class="amount">
+                                            <span class="currency font-DM-sans">€</span>
+                                            <span class="number">2’598</span>
+                                            <span class="sub-title">+ IVA</span>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>Sviluppo Wordpress</p>
+                                            </li>
+                                            <li>
+                                                <p>Elementor PRO</p>
+                                            </li>
+                                            <li>
+                                                <p>Custom Design</p>
+                                            </li>
+                                            <li>
+                                                <p>Prototipo Figma navigabile</p>
+                                            </li>
+                                            <li>
+                                                <p>Plugin WpRocket</p>
+                                            </li>
+                                            <li>
+                                                <p>Woocmmmerce</p>
+                                            </li>
+                                            <li>
+                                                <p>Circa 5 - 8 pagine</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+					</section>
+
+                    <section class="block relative theme-switch one-page-website mb-[100px] md:mb-[183px]" data-scroll data-theme="dark-mode">
+						<div class="container">
+                            <div class="section-row grid md:grid-cols-2">
+                                <div class="mb-[50px] md:mb-0">
+                                    <h4 class="text">Siti web one-page</h4>
+                                    <p class="sub-title text">
+                                        Per lo sviluppo o il design di siti web one page, abbiamo un prezzo di partenza, di solito<br /> valutiamo la complessità del design e il numero di sezioni del sito.
+                                    </p>
+                                    <div class="grid md:grid-cols-2">
+                                        <div class="amount"> 
+                                            <h6 class="text">Solo Sviluppo a partire da</h6>
+                                            <span class="currency text font-DM-sans">€</span>
+                                            <span class="number text">598</span>
+                                            <span class="sub-title text">+ IVA / Anno</span>
+                                        </div>
+                                        <div class="amount"> 
+                                            <h6 class="text">Solo Design a partire da</h6>
+                                            <span class="currency text font-DM-sans">€</span>
+                                            <span class="number text">298</span>
+                                            <span class="sub-title text">+ IVA / Anno</span>
+                                        </div>
+                                        <div class="amount"> 
+                                            <h6 class="text">Design + Sviluppo a partire da</h6>
+                                            <span class="currency text font-DM-sans">€</span>
+                                            <span class="number text">798</span>
+                                            <span class="sub-title text">+ IVA / Anno</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="text">Siti web one-page</h4>
+                                    <p class="sub-title text">
+                                        Per lo sviluppo o il design di siti web one page, abbiamo un prezzo di partenza, di solito<br /> valutiamo la complessità del design e il numero di sezioni del sito.
+                                    </p>
+                                    <div class="grid md:grid-cols-2">
+                                        <div class="amount"> 
+                                            <h6 class="text">Solo Sviluppo a partire da</h6>
+                                            <span class="currency text font-DM-sans">€</span>
+                                            <span class="number text">120</span>
+                                            <span class="sub-title text">+ IVA / Anno</span>
+                                        </div>
+                                        <div class="amount"> 
+                                            <h6 class="text">Solo Design a partire da</h6>
+                                            <span class="currency text font-DM-sans">€</span>
+                                            <span class="number text">98</span>
+                                            <span class="sub-title text">+ IVA / Anno</span>
+                                        </div>
+                                        <div class="amount"> 
+                                            <h6 class="text">Design + Sviluppo a partire da</h6>
+                                            <span class="currency text font-DM-sans">€</span>
+                                            <span class="number text">198</span>
+                                            <span class="sub-title text">+ IVA / Anno</span>
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+					</section>
+
+                    <section class="block relative theme-switch hosting-update" data-scroll data-theme="dark-mode">
+                        <div class="container">
+                            <div class="md:flex gap-[52px] items-center">
+                                <div class="white-content mb-[50px] md:md-0">
+                                    <h3>Hosting & Aggiornamenti</h3>
+                                    <p>
+                                        Sei stanco di romperti la testa per mantenere ed aggiornare siti in Wordpress?
+                                    </p>
+                                    <p>
+                                        Nella nostra soluzione Hosting & Aggiornamenti permette di gestire i tuoi siti utilizzando <br class="hidden md:block" />
+                                        hosting veloce e complete ma sopratutto aggiorneremo manualmente i tuoi siti web,
+                                    </p>
+                                    <h6>A partire da</h6>
+                                    <div class="amount">
+                                        <span class="currency font-DM-sans">€</span>
+                                        <span class="number">99</span>
+                                        <span class="sub-title">+ IVA / Anno</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="text">Cosa comprende hostare con noi</h5>
+                                    <div class="grid md:grid-cols-2 gap-[30px] md:gap-[82px]">
+                                        <ul class="text">
+                                            <li>
+                                                <p>Aggiornamenti manuali dei tuoi siti in Wordpress </p>
+                                            </li>
+                                            <li>
+                                                <p>Trasferimento gratuito del sito</p>
+                                            </li>
+                                            <li>
+                                                <p>Acquisto o trasferimento del dominio</p>
+                                            </li>
+                                            <li>
+                                                <p>Server Cloud Super Veloci</p>
+                                            </li>
+                                            <li>
+                                                <p>Sistema di CDN </p>
+                                            </li>
+                                        </ul>
+                                        <ul class="text">
+                                            <li>
+                                                <p>Sistema di Caching sul sito & Server side</p>
+                                            </li>
+                                            <li>
+                                                <p>Sistema di Caching sul sito & Server side</p>
+                                            </li>
+                                            <li>
+                                                <p>Email Professionale</p>
+                                            </li>
+                                            <li>
+                                                <p>Sistema di sicurezza per wordpress</p>
+                                            </li>
+                                            <li>
+                                                <p>WpRocket Plugin</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+					<section id="contact-section" data-scroll class="block relative block relative theme-switch pb-[calc((100vw_*_219)_/_1440)] mt-[calc((100vw_*_211)_/_1440)]" data-theme="dark-mode">
+						<div class="container">
+							<div class="container-2 text-center">
+								<h4 class="text  title font-medium leading-[calc((100vw_*_69)_/_768)] md:leading-[calc((100vw_*_69)_/_1440)] text-[calc((100vw_*_60)_/_768)] md:text-[calc((100vw_*_64)_/_1440)] text-center inline-block tracking-[calc((100vw_*_-3.2)_/_1440)] mb-[calc((100vw_*_43.56)_/_768)] md:mb-[calc((100vw_*_43.56)_/_1440)] " data-scroll=""
+									data-method="rowLineTextReveal"
+									data-anim-name="homeForthSectionBrandsAnim10"
+									data-scroll-call="homeForthSectionBrandsAnim10"
+									data-delay="0"
+								>
+                                Per un preventivo più<br /> preciso contattaci
+								</h4>
+
+								<div class="button-outer text-center">
+									<a href="#" class="btn-arrow btn-secondary ml-[37%] md:ml-[42%] flex items-center btn-discover relative animated-arrow border border-primary-900 px-[calc((100vw_*_35)_/_768)] md:px-[calc((100vw_*_35)_/_1440)] py-[calc((100vw_*_16)_/_768)] md:py-[calc((100vw_*_16)_/_1440)] font-medium text-[calc((100vw_*_18)_/_768)] md:text-[calc((100vw_*_18)_/_1440)] tracking-[calc((100vw_*_-0.48)_/_1440)] leading-[calc((100vw_*_22)_/_1440)] gap-[calc((100vw_*_10)_/_1440)] w-max is-inview" data-scroll="" data-method="fadeReveal" data-anim-name="homeHelpSectionButtonAnim6" data-scroll-call="homeHelpSectionButtonAnim6" data-delay="100" style="opacity: 1;">
+										<span>Lavora con noi</span>
+										<span class="the-arrow -right white">
+											<span class="shaft"></span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- Footer -->
+					<footer data-scroll class="page-footer theme-switch pt-[calc((100vw_*_28.3)_/_1440)] pb-[calc((100vw_*_29.3)_/_1440)]" data-theme="dark-mode">
+						<div class="container">
+							<div class="grid grid-flow-row-dense md:grid-cols-12 border-b border-primary-500 pb-[calc((100vw_*_32)_/_1440)]">
+								<div class="col-span-8 mb-[calc((100vw_*_50)_/_768)] md:mb-0">
+									<a href="./index.html" class="footer-logo">
+										<svg width="82" height="27" viewbox="0 0 82 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6.21077 10.8294V4.81739H11.5028C12.0068 4.81739 12.4868 4.86539 12.9428 4.96139C13.4228 5.03339 13.8428 5.17739 14.2028 5.39339C14.5628 5.60939 14.8508 5.90939 15.0668 6.29339C15.2828 6.67739 15.3908 7.16939 15.3908 7.76939C15.3908 8.84939 15.0668 9.62939 14.4188 10.1094C13.7708 10.5894 12.9428 10.8294 11.9348 10.8294H6.21077ZM0.558768 0.425393V26.1294H13.0148C14.1668 26.1294 15.2828 25.9854 16.3628 25.6974C17.4668 25.4094 18.4388 24.9654 19.2788 24.3654C20.1428 23.7654 20.8268 22.9974 21.3308 22.0614C21.8348 21.1014 22.0868 19.9734 22.0868 18.6774C22.0868 17.0694 21.5308 15.7014 20.8988 14.5734C20.1308 13.4214 18.9548 12.6174 17.3708 12.1614C18.5228 11.6094 19.3868 10.9014 19.9628 10.0374C20.5628 9.17339 20.8628 8.09339 20.8628 6.79739C20.8628 5.59739 20.6588 4.58939 20.2508 3.77339C19.8668 2.95739 19.3148 2.30939 18.5948 1.82939C17.8748 1.32539 17.0108 0.965393 16.0028 0.749393C14.9948 0.533393 13.8788 0.425393 12.6548 0.425393H0.558768ZM6.21077 21.7374V14.6814H12.3668C13.5908 14.6814 14.5748 14.9694 15.3188 15.5454C16.0628 16.0974 16.4348 17.0334 16.4348 18.3534C16.4348 19.0254 16.3148 19.5774 16.0748 20.0094C15.8588 20.4414 15.5588 20.7894 15.1748 21.0534C14.7908 21.2934 14.3468 21.4734 13.8428 21.5934C13.3388 21.6894 12.8108 21.7374 12.2588 21.7374H6.21077ZM25.5104 0.425393V26.1294H30.6224V0.425393H25.5104ZM52.1077 26.1294V7.51739H46.9957V17.2734C46.9957 19.1694 46.6837 20.5374 46.0597 21.3774C45.4357 22.1934 44.4277 22.6014 43.0357 22.6014C41.8117 22.6014 40.9597 22.2294 40.4797 21.4854C39.9997 20.7174 39.7597 19.5654 39.7597 18.0294V7.51739H34.6477V18.9654C34.6477 20.1174 34.7437 21.1734 34.9357 22.1334C35.1517 23.0694 35.5117 23.8734 36.0157 24.5454C36.5197 25.1934 37.2037 25.6974 38.0677 26.0574C38.9557 26.4174 40.0837 26.5974 41.4517 26.5974C42.5317 26.5974 43.5877 26.3574 44.6197 25.8774C45.6517 25.3974 46.4917 24.6174 47.1397 23.5374H47.2477V26.1294H52.1077ZM55.9875 7.51739V26.1294H61.0995V17.7414C61.0995 16.9014 61.1835 16.1214 61.3515 15.4014C61.5195 14.6814 61.7955 14.0574 62.1795 13.5294C62.5875 12.9774 63.1155 12.5454 63.7635 12.2334C64.4115 11.9214 65.2035 11.7654 66.1395 11.7654C66.4515 11.7654 66.7755 11.7894 67.1115 11.8374C67.4475 11.8614 67.7355 11.8974 67.9755 11.9454V7.19339C67.5675 7.07339 67.1955 7.01339 66.8595 7.01339C66.2115 7.01339 65.5875 7.10939 64.9875 7.30139C64.3875 7.49339 63.8235 7.76939 63.2955 8.12939C62.7675 8.46539 62.2995 8.88539 61.8915 9.38939C61.4835 9.86939 61.1595 10.3974 60.9195 10.9734H60.8475V7.51739H55.9875ZM69.9797 7.51739V26.1294H75.0917V17.7414C75.0917 16.9014 75.1757 16.1214 75.3437 15.4014C75.5117 14.6814 75.7877 14.0574 76.1717 13.5294C76.5797 12.9774 77.1077 12.5454 77.7557 12.2334C78.4037 11.9214 79.1957 11.7654 80.1317 11.7654C80.4437 11.7654 80.7677 11.7894 81.1037 11.8374C81.4397 11.8614 81.7277 11.8974 81.9677 11.9454V7.19339C81.5597 7.07339 81.1877 7.01339 80.8517 7.01339C80.2037 7.01339 79.5797 7.10939 78.9797 7.30139C78.3797 7.49339 77.8157 7.76939 77.2877 8.12939C76.7597 8.46539 76.2917 8.88539 75.8837 9.38939C75.4757 9.86939 75.1517 10.3974 74.9117 10.9734H74.8397V7.51739H69.9797Z" fill="white"/>
+										</svg>
+									</a>
+									<span class="sm:w-1/5 text-left mt-[calc((100vw_*_20)_/_1440)] text-[calc((100vw_*_36)_/_768)] md:text-[calc((100vw_*_24)_/_1440)] leading-[calc((100vw_*_48)_/_768)] md:leading-[calc((100vw_*_29)_/_1440)] text-primary-500 block">
+										Studio di <br>design & <br>sviluppo <br>web.
+									</span>
+								</div>
+								<div class="col-span-2 text-left">
+									<span class="text-white font-bold text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)] leading-[calc((100vw_*_20)_/_1440)] block">Links</span>
+									<ul>
+										<li class="flex md:mt-[calc((100vw_*_20.5)_/_1440)] mt-[calc((100vw_*_20.5)_/_768)] leading-[calc((100vw_*_1]">
+											<a href="./index.html" class="link text text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)] leading-[calc((100vw_*_19)_/_768)] md:leading-[calc((100vw_*_19)_/_1440)]">Home</a>
+										</li>
+										<li class="flex md:mt-[calc((100vw_*_20.5)_/_1440)] mt-[calc((100vw_*_20.5)_/_768)] leading-[calc((100vw_*_1]">
+											<a href="./services.html" class="link text text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)] leading-[calc((100vw_*_19)_/_768)] md:leading-[calc((100vw_*_19)_/_1440)]">Cosa Facciamo</a>
+										</li>
+										<li class="flex md:mt-[calc((100vw_*_20.5)_/_1440)] mt-[calc((100vw_*_20.5)_/_768)] leading-[calc((100vw_*_1]">
+											<a href="./about.html" class="link text text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)] leading-[calc((100vw_*_19)_/_768)] md:leading-[calc((100vw_*_19)_/_1440)]">Studio</a>
+										</li>
+										<li class="flex md:mt-[calc((100vw_*_20.5)_/_1440)] mt-[calc((100vw_*_20.5)_/_768)] leading-[calc((100vw_*_1]">
+											<a href="./work.html" class="link text text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)] leading-[calc((100vw_*_19)_/_768)] md:leading-[calc((100vw_*_19)_/_1440)]">Lavori</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-span-2 text-left">
+									<span class="text-white font-bold text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)] block leading-[calc((100vw_*_20)_/_1440)]">Studio</span>
+									<ul>
+										<li class="md:mt-[calc((100vw_*_20.5)_/_1440)] mt-[calc((100vw_*_20.5)_/_768)] leading-[calc((100vw_*_21)_/_768)] md:leading-[calc((100vw_*_21)_/_1440)]">
+											<address class="text text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)]">
+												Via Valentini 9, 38060 <br />Calliano (TN)
+											</address>
+										</li>
+									</ul>
+									<span class="text-white font-bold text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)] mt-[calc((100vw_*_34.02)_/_1440)] block leading-[1] contact-span">Contatti</span>
+									<ul>
+										<li class="flex  md:mt-[calc((100vw_*_10)_/_1440)] mt-[calc((100vw_*_10)_/_768)] leading-[calc((100vw_*_1] leading-[1]">
+											<a href="#" class="text text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)]">aryan@blurr.it</a>
+										</li>
+										<li class="flex  md:mt-[calc((100vw_*_10)_/_1440)] mt-[calc((100vw_*_10)_/_768)] leading-[calc((100vw_*_1] leading-[1]">
+											<a href="javascript:;" class="text text-[calc((100vw_*_16)_/_768)] md:text-[calc((100vw_*_16)_/_1440)]">+39 3770935429</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="line"></div>
+							<div class="flex justify-between pt-[calc((100vw_*_33.04)_/_1440)] copyright">
+								<p class="text-[calc((100vw_*_13)_/_768)] md:text-[calc((100vw_*_13)_/_1440)] xl:text-[13px] leading-[1] text-left block text-primary-500">Copyright 2022 Blurr.it p.va 02559530221</p>
+								<a href="#" class="link text text-[calc((100vw_*_13)_/_768)] md:text-[calc((100vw_*_13)_/_1440)] xl:text-[13px] leading-[calc((100vw_*_13)_/_768)] md:leading-[calc((100vw_*_13)_/_1440)]">Privacy & Policy</a>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</main>
+		</div>
+	</div>
+</body>
+
+<!-- JavaScript Plugins -->
+<script src="./dist/js/gsap.min.js"></script>
+<script src="./dist/js/SplitText.min.js"></script>
+<script src="./dist/js/lottie_light_min.js"></script>
+<script src="./dist/js/swiper-bundle-build.min.js"></script>
+<script src="./dist/js/ScrollTrigger.min.js"></script>
+<script src="./dist/js/barba.umd.js"></script>
+<script src="./dist/js/ua-parser.min.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@1.5.0/dist/lottie-interactivity.min.js"></script>
+
+<script src="./dist/js/jsband-min.js" type="text/javascript"></script>
+<script src="./dist/js/blob.js" type="text/javascript"></script>
+<script src="./dist/js/bundle.js"></script>
+
+<!-- Core JavaScript -->
+<script src="./dist/js/script.js"></script>
+
+</html>
